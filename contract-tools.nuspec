@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as a Greek uppercase letter omega enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>contract-tools</id>
+    <version>1.28.1.0</version>
+    <title>Contract Tools</title>
+    <authors>Paper Software LLC</authors>
+    <owners>Paper Software LLC</owners>
+    <copyright>2015–2018 Paper Software LLC</copyright>
+    <projectUrl>https://papersoftware.com/contract-tools</projectUrl>
+    <packageSourceUrl>https://github.com/papersoftware/contract-tools-chocolatey-package</packageSourceUrl>
+    <iconUrl>https://papersoftware.com/images/contract-tools-chocolatey-package-icon.png</iconUrl>
+    <docsUrl>https://contract-tools.helpscoutdocs.com</docsUrl>
+    <summary>Microsoft Word VSTO add‑in for drafting and analyzing contracts</summary>
+    <description><![CDATA[Contract Tools is a [Microsoft Word](https://products.office.com/en-us/word) [VSTO add‑in](https://docs.microsoft.com/en-us/visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio) for drafting and analyzing contracts; visit https://papersoftware.com/contract-tools to learn more.
+
+After installing Contract Tools, you can [try it for free](https://contract-tools.helpscoutdocs.com/article/278-trying-contract-tools) for 7 days. After your trial, you can keep using Contract Tools by [entering the activation key](https://contract-tools.helpscoutdocs.com/article/143-activating-contract-tools) you receive when you buy a subscription. To buy a Contract Tools subscription, visit https://papersoftware.com.
+
+Contract Tools requires Word 2007 or later, but this package doesn’t include Word as a dependency. You should install Word before installing Contract Tools.
+]]></description>
+    <tags>contract-tools add-in office word</tags>
+    <dependencies>
+      <dependency id="dotnet4.5.2" />
+      <dependency id="vcredist2010" />
+      <dependency id="vstor2010" version="10.0.60828" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
