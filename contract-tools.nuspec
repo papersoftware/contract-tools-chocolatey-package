@@ -19,7 +19,7 @@ After installing Contract Tools, you can [try it for free](https://contract-tool
 
 Contract Tools requires Word 2007 or later, but this package doesn’t include Word as a dependency. You should install Word before installing Contract Tools.
 ]]></description>
-    <tags>contract-tools add-in office word</tags>
+    <tags>contract-tools trial add-in office word</tags>
     <dependencies>
       <dependency id="dotnet4.5.2" />
       <dependency id="vcredist2010" />
