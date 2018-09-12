@@ -17,7 +17,7 @@ $keyPath = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\winword.ex
 $needsDotNet3_5 = $false
 if ((Test-Path $keyPath) -and (Get-ItemProperty $keyPath Path).Path -match '(\d+)\\$' -and $Matches[1] -eq 12) {
   $needsDotNet3_5 = !(Test-Path 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5')
-  $packageArgs['silentArgs'] += ' ALLUSERS=""'
+  $packageArgs.silentArgs += ' ALLUSERS=""'
 }
 
 Install-ChocolateyPackage @packageArgs
