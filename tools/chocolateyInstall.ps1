@@ -2,9 +2,9 @@ $ErrorActionPreference = 'Stop'
 
 $packageArgs = @{
   softwareName   = 'Paper Software Contract Tools'
-  packageName    = $env:ChocolateyPackageName
+  packageName    = $Env:ChocolateyPackageName
   fileType       = 'MSI'
-  url            = "https://papersoftware.s3.amazonaws.com/PaperSoftwareContractTools-$env:ChocolateyPackageVersion.msi"
+  url            = "https://papersoftware.s3.amazonaws.com/PaperSoftwareContractTools-$Env:ChocolateyPackageVersion.msi"
   checksum       = '5bbb02928eb790eb6fc5a42abfc3470291b88461ea3b997c00fde34d9041c76b'
   checksumType   = 'sha256'
   silentArgs     = '/quiet /noRestart'
