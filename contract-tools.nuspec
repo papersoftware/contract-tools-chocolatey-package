@@ -9,6 +9,8 @@
     <owners>Paper Software LLC</owners>
     <copyright>2015–2021 Paper Software LLC</copyright>
     <projectUrl>https://papersoftware.com/contract-tools</projectUrl>
+    <licenseUrl>https://papersoftware.com/contract-tools-individual-license</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/papersoftware/contract-tools-chocolatey-package</packageSourceUrl>
     <iconUrl>https://raw.githubusercontent.com/papersoftware/contract-tools-chocolatey-package/master/icon.png</iconUrl>
     <docsUrl>https://contract-tools.helpscoutdocs.com</docsUrl>
