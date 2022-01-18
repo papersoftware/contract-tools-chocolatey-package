@@ -1,0 +1,29 @@
+name: Update copyright year
+on:
+  schedule:
+    - cron: '0 0 1 1 *'
+
+jobs:
+  update:
+    name: Update copyright year
+    runs-on: windows-latest
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Update copyright year
+      run: |
+        $nuspecXML = New-Object Xml.XmlDocument
+        $nuspecXML.PreserveWhitespace = $true
+        $filePath = "$GITHUB_WORKSPACE\a\contract-tools-chocolatey-package\contract-tools-chocolatey-package\contract-tools.nuspec"
+        $nuspecXML.Load($filePath)
+        $namespaceManager = New-Object Xml.XmlNamespaceManager($nuspecXML.NameTable)
+        $namespaceManager.AddNamespace('nuspec', 'http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd')
+        $nuspecXML.SelectSingleNode('/nuspec:package/nuspec:metadata/nuspec:copyright', $namespaceManager).InnerText = "2015–$(Get-Date -Format 'yyyy') Paper Software LLC"
+        [IO.File]::WriteAllText($filePath, $nuspecXML.OuterXml)
+        git config user.email "$EMAIL_ADDRESS"
+        git config user.name nwhetsell
+        git commit --all --message='Update copyright year'
+        git push
+      env:
+        EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
