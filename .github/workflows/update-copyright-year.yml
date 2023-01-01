@@ -2,6 +2,7 @@ name: Update copyright year
 on:
   schedule:
   - cron: '0 0 1 1 *'
+  workflow_dispatch:
 
 jobs:
   update:
@@ -21,8 +22,8 @@ jobs:
         $namespaceManager.AddNamespace('nuspec', 'http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd')
         $nuspecXML.SelectSingleNode('/nuspec:package/nuspec:metadata/nuspec:copyright', $namespaceManager).InnerText = "2015–$(Get-Date -Format 'yyyy') Paper Software LLC"
         [IO.File]::WriteAllText($filePath, $nuspecXML.OuterXml)
-        git config user.email "$EMAIL_ADDRESS"
-        git config user.name nwhetsell
+        git config --global user.email "${{ env.EMAIL_ADDRESS }}"
+        git config --global user.name nwhetsell
         git commit --all --message='Update copyright year'
         git push
       env:
