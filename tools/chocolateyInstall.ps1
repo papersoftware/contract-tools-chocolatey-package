@@ -8,7 +8,7 @@ $packageArgs = @{
   checksum       = '86703ebaebd85029f689808e7dad06683e33eb798c74584c90cc9637233a0842'
   checksumType   = 'sha256'
   silentArgs     = '/quiet /noRestart'
-  validExitCodes = 0, 1641, 3010 # https://docs.microsoft.com/en-us/windows/win32/msi/error-codes
+  validExitCodes = 0, 1641, 3010 # https://learn.microsoft.com/en-us/windows/win32/msi/error-codes
 }
 
 # On systems with Word 2007, Contract Tools requires .NET Framework 3.5 and must
