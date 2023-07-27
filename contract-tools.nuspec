@@ -12,7 +12,7 @@
     <licenseUrl>https://papersoftware.com/contract-tools-individual-license</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/papersoftware/contract-tools-chocolatey-package</packageSourceUrl>
-    <iconUrl>https://raw.githubusercontent.com/papersoftware/contract-tools-chocolatey-package/master/icon.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/papersoftware/contract-tools-chocolatey-package/main/icon.png</iconUrl>
     <docsUrl>https://contract-tools.helpscoutdocs.com</docsUrl>
     <summary>Microsoft Word VSTO add‑in for drafting and analyzing contracts</summary>
     <description><![CDATA[Contract Tools is a [Microsoft Word](https://www.microsoft.com/en-us/microsoft-365/word) [VSTO add‑in](https://docs.microsoft.com/en-us/visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio) for drafting and analyzing contracts; visit https://papersoftware.com/contract-tools to learn more.
