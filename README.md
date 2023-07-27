@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/papersoftware/contract-tools-chocolatey-package/master/icon.png" width="48" height="48" /> [Contract Tools](https://chocolatey.org/packages/contract-tools)
+# <img src="https://raw.githubusercontent.com/papersoftware/contract-tools-chocolatey-package/main/icon.png" width="48" height="48"/> [Contract Tools](https://chocolatey.org/packages/contract-tools)
 
 Contract Tools is a [Microsoft Word](https://www.microsoft.com/en-us/microsoft-365/word) [VSTO add‑in](https://docs.microsoft.com/en-us/visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio) for drafting and analyzing contracts; visit https://papersoftware.com/contract-tools to learn more.
 
