@@ -3,14 +3,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  update:
-    name: Update copyright year
+  push:
+    name: Push package
     runs-on: windows-latest
     steps:
     - name: Check out repository
       uses: actions/checkout@v4
 
-    - name: Push package
+    - name: Pack and push
       run: |
         choco pack
         choco push --source=https://push.chocolatey.org/ --key="$Env:CHOCOLATEY_API_KEY"
